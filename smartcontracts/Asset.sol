@@ -41,7 +41,7 @@ contract Asset{
     function startAuction(uint _startPrice, uint32 _bidends) public
     {
         startPrice = _startPrice;
-        bidends = block.number + _bidends;
+        bidends = block.timestamp;
         _auctionstatus = AuctionStatus.Active;
     }
     
@@ -51,7 +51,7 @@ contract Asset{
         require(_auctionstatus == AuctionStatus.Active);
         require(msg.value > startPrice);
         require(msg.value > highestBid);
-        require(block.number <= bidends);
+        require(block.timestamp <= bidends);
         
         BID _bid;
         _Bids.push(_bid);
@@ -74,7 +74,7 @@ contract Asset{
             throw;
         }
         
-        if (block.number < bidends) {
+        if (block.timestamp < bidends) {
             LogFailure("Can not end an auction that hasn't hit the deadline yet"); 
             throw; 
         }
