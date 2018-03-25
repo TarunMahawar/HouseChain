@@ -15,7 +15,7 @@ contract Asset{
     uint public highestBid;
     uint private ReservedPrice;
     uint public startPrice;
-    uint256 public bidends;
+    uint public bidends;
     address highestBidder;
     
     // uint public currentBlock = block.number;
@@ -67,7 +67,7 @@ contract Asset{
     
 
 
-    function EndAution() public payable
+    function EndAuction() public payable
     {   
         if (_auctionstatus != AuctionStatus.Active) {
             LogFailure("Can not end an auction that's already ended");    
@@ -104,9 +104,13 @@ contract Asset{
 
     }
     
-    event happened(string);
     function getOwner() constant returns (address)
+    {
         return owner;
+    }
+    
+    function getendtime() constant returns(uint){
+        return bidends;
     }
     
     function getAuctionStatus() returns (uint )

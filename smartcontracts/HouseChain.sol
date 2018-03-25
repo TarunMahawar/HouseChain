@@ -22,6 +22,7 @@ contract Reoligy{
     struct AuctionedAsset{
         address AssetOwner;
         address AssetAddress;
+        uint endtime;
     }
     
     AuctionedAsset[] public _auctionedAssets;
@@ -49,13 +50,18 @@ contract Reoligy{
 
         Asset _asset = Asset(_contractAddress);
         require(_asset.getAuctionStatus() == 1);
-        
+                
         AuctionedAsset _tempAuctionedAsset;
         _tempAuctionedAsset.AssetOwner = msg.sender;
         _tempAuctionedAsset.AssetAddress = _contractAddress;
-        
+        _tempAuctionedAsset.endtime = _asset.getendtime();
         _auctionedAssets.push(_tempAuctionedAsset);
     }
     
-    
+    // function EndAuction(){
+    //     uint length = _auctionedAssets.length;
+    //     for(uint i=0; i< length; i++){
+    //             // if(block.endtime)
+    //     }
+    // }
 }
