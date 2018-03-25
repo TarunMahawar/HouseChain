@@ -8,94 +8,49 @@
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
   <style>
-table {
-    border-collapse: collapse;
-    width: 100%;
-}
-
-td, th ::before {
-    border: 1px solid #dddddd;
-    text-align: center;
-    padding: 8px;
-}
 
 button{
 	
 	margin-right: 20px;
 }
 </style>
-
-
-	<!-- angular JS online -->
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
-
-
-	</script>
+	
 </head>
 <body>
-	<div class="container-fluid"></div>
+	<div class="container-fluid">
 		<div class="row">
 			<div class="jumbotron text-center">
 				
 				<p><h1>Auction list</h1></p>
 				
 			</div>
-					</div>
-		<div class="row">
-			<table>
-				<tr>
-					<th>Property-name</th>
-					<th>status</th>
-					<th>start price</th>
-					<th>top bid</th>
-					<th>end time</th>
-				</tr>
-				<tr>
-					<td>qwertyuiop</td>
-					<td>rent</td>
-					<td>1 ETH</td>
-					<td>3 ETH</td>
-					<td>5 hours left</td>
-				</tr>
-				
-				<tr>
-					<td>qwertyuiop</td>
-					<td>rent</td>
-					<td>1 ETH</td>
-					<td>3 ETH</td>
-					<td>5 hours left</td>
-				</tr>
-				<tr>
-					<td>qwertyuiop</td>
-					<td>rent</td>
-					<td>1 ETH</td>
-					<td>3 ETH</td>
-					<td>5 hours left</td>
-				</tr>
-				<tr>
-					<td>qwertyuiop</td>
-					<td>rent</td>
-					<td>1 ETH</td>
-					<td>3 ETH</td>
-					<td>5 hours left</td>
-				</tr>
-				<tr>
-					<td>qwertyuiop</td>
-					<td>rent</td>
-					<td>1 ETH</td>
-					<td>3 ETH</td>
-					<td>5 hours left</td>
-				</tr>
-				<tr>
-					<td>qwertyuiop</td>
-					<td>rent</td>
-					<td>1 ETH</td>
-					<td>3 ETH</td>
-					<td>5 hours left</td>
-				</tr>
-
-			</table>
-
 		</div>
+	</div>
+	<div class="container-fluid" id="auctionContainer"></div>
+		<!--auction list will show here-->
+		<div class="row text-center" id="auctionHeader">
+			<div class="col-xs-3">Property Name</div>
+			<div class="col-xs-2">Status</div>
+			<div class="col-xs-3">Start price</div>
+			<div class="col-xs-2">top bid</div>
+			<div class="col-xs-2">end time</div>
+		</div>
+		<div class="row text-center" id="auctionListBox">
+			
+		</div>	
+	
+
+<div class="row" id="listTemplate" style="display:none">
+			<div class="row">
+				<div id="propertyName" class="col-xs-3"></div>
+				<div id="status" class="col-xs-2"></div>
+				<div id="startPrice" class="col-xs-3"></div>
+				<div id="topBid" class="col-xs-2"></div>
+				<div id="endTime" class="col-xs-2"></div>
+			</div>
+			<div>
+			</div>
+</div>
+
 </body>
 </html>
