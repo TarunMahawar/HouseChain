@@ -1,0 +1,56 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <style>
+
+button{
+	
+	margin-right: 20px;
+}
+</style>
+	
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="jumbotron text-center">
+				
+				<p><h1>Auction list</h1></p>
+				
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid" id="auctionContainer"></div>
+		<!--auction list will show here-->
+		<div class="row text-center" id="auctionHeader">
+			<div class="col-xs-3">Property Name</div>
+			<div class="col-xs-2">Status</div>
+			<div class="col-xs-3">Start price</div>
+			<div class="col-xs-2">top bid</div>
+			<div class="col-xs-2">end time</div>
+		</div>
+		<div class="row text-center" id="auctionListBox">
+			
+		</div>	
+	
+
+<div class="row" id="listTemplate" style="display:none">
+			<div class="row">
+				<div id="propertyName" class="col-xs-3"></div>
+				<div id="status" class="col-xs-2"></div>
+				<div id="startPrice" class="col-xs-3"></div>
+				<div id="topBid" class="col-xs-2"></div>
+				<div id="endTime" class="col-xs-2"></div>
+			</div>
+			<div>
+			</div>
+</div>
+
+</body>
+</html>

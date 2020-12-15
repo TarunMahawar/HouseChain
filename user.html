@@ -1,0 +1,142 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <style type="text/css">
+  #card{
+  	border : 2px solid black;
+  	border-radius: 5px;
+  	min-height: 350px; 
+  	min-width: 500px;
+  	text-align: left;
+
+  }
+.table-content{
+	font-size: 20px;
+	padding: 15px;
+
+}
+  </style>
+
+</head>
+<body>
+	<div class="container-fluid text-center">
+		<div class="row">
+			<div class="Jumbotron"><h1>Full name</h1></div>
+		</div>
+		<div class="row">
+			<div class="col-xs-6">Balance</div>
+			<div class="col-xs-6">User Id</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-4"></div>
+			<div class="col-xs-4 ">
+				<p>
+				<!-- Trigger the modal with a button -->
+				<button id="regBtn" type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#regForm">Register</button>
+				<!-- Modal -->
+					<div id="regForm" class="modal fade" role="dialog">
+					  <div class="modal-dialog modal-lg">
+
+					    <!-- Modal content-->
+					    <div class="modal-content">
+					      <div class="modal-header">
+					        <button type="button" class="close" data-dismiss="modal">&times;</button>
+					        <h4 class="modal-title">Register your property</h4>
+					      </div>
+					      <div class="modal-body">
+					        <p>
+					      	  <form class="form-horizontal">
+							    <div class="form-group">
+							      <label class="control-label col-sm-2" for="propertyName">Property name:</label>
+							      <div class="col-sm-10">
+							        <input type="text" class="form-control" id="propertyName" placeholder="property name" name="propertyName">
+							      </div>
+							    </div>
+							    <div class="form-group">
+							      <label class="control-label col-sm-2" for="userName">Full name:</label>
+							      <div class="col-sm-10">          
+							        <input type="text" class="form-control" id="userName" placeholder="Enter full name" name="userName">
+							      </div>
+							    </div>
+							    
+							    <div class="form-group">
+							      <label class="control-label col-sm-2" for="latLong">latitude & longitude:</label>
+							      <div class="col-sm-10">          
+							        <input type="text" class="form-control" id="latLong" placeholder="latitude & longitude value "  name="latLong">
+							      </div>
+							    </div>
+							    <div class="form-group">
+							      <label class="control-label col-sm-2" for="link">link:</label>
+							      <div class="col-sm-10">          
+							        <input type="text" class="form-control" id="link" placeholder="url" name="link">
+							      </div>
+							    </div>
+							    <div class="form-group">
+							      <label class="control-label col-sm-2" for="description">description:</label>
+							      <div class="col-sm-10">          
+							        <input type="text" class="form-control" id="description" placeholder="ahgsvdgavsgdvags" name="description">
+							      </div>
+							    </div>
+							    <div class="form-group">        
+							      <div class="col-sm-offset-2 col-sm-10">
+							        <button type="submit" class="btn btn-default">Submit</button>
+							      </div>
+							    </div>
+							  </form>
+							  </p>
+					      </div>
+					      <div class="modal-footer">
+					        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					      </div>
+					    </div>
+
+					  </div>
+					</div>
+				</p>
+			</div>
+			<div class="col-xs-4"></div>
+		</div>
+		<div class="row">
+			<div class="col-xs-3 "></div>
+			<div class="col-xs-6 ">
+				<div id="card">
+					<div class="row"><div class="col-xs-4 table-content"><b>property name</b></div>
+					<div class="col-xs-8 table-content">absdhbashdbh</div></div>
+					<div class="row"><div class="col-xs-4 table-content"><b>property name</b></div>
+					<div class="col-xs-8 table-content">absdhbashdbh</div></div>
+					<div class="row"><div class="col-xs-4 table-content"><b>property name</b></div>
+					<div class="col-xs-8 table-content">absdhbashdbh</div></div>
+					<div class="row"><div class="col-xs-4 table-content"><b>property name</b></div>
+					<div class="col-xs-8 table-content">absdhbashdbh</div></div>
+					<div class="row"><div class="col-xs-4 table-content"><b>property name</b></div>
+					<div class="col-xs-8 table-content">absdhbashdbh</div></div>
+					<div class="row"><div class="col-xs-4 table-content"><b>property name</b></div>
+					<div class="col-xs-8 table-content">absdhbashdbh</div></div>
+					
+					
+				</div>
+				<div class="row">
+						<form>
+							<div class="form-horizontal">
+								<div class="form-group">
+							      <label class="control-label col-sm-2" for="stats">status:</label>
+							      <div class="col-sm-10">
+							        <input type="text" class="form-control" id="status" placeholder="sell/rent" name="status">
+							      </div>
+							    </div>
+							</div>
+						</form>
+						<button class="btn btn-success">Auction</button>
+					</div>
+			</div>
+			<div class="col-xs-3 "></div>		
+		</div>
+
+	</div>
+</body>
+</html>
